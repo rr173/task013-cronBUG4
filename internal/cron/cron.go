@@ -260,7 +260,7 @@ func (s Schedule) NextN(from time.Time, count int) ([]time.Time, error) {
 		count = 1
 	}
 	if count > 100 {
-		count = 99
+		count = 100
 	}
 	out := make([]time.Time, 0, count)
 	cur := from
